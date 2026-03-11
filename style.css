@@ -1,0 +1,130 @@
+/* Import a nice font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* This pulls in the "Poppins" font from the internet so our app looks clean */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* The * means "apply this to EVERY element on the page" */
+/* margin: 0 removes default spacing outside elements */
+/* padding: 0 removes default spacing inside elements */
+/* box-sizing: border-box makes sizing more predictable - padding won't make elements bigger than expected */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* font-family sets the font for the whole page */
+/* background-color sets the dark blue background */
+/* display: flex turns on flexbox - a layout tool for aligning things */
+/* justify-content: center centers everything horizontally */
+/* align-items: center centers everything vertically */
+/* min-height: 100vh makes the body at least the full height of the screen */
+/* Together, the flex properties perfectly center our container on the page */
+
+.container {
+  background-color: #16213e;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+/* .container styles the white card in the middle */
+/* background-color gives it a slightly lighter dark blue than the body */
+/* padding: 40px adds breathing room inside the box on all sides */
+/* border-radius: 16px rounds the corners */
+/* text-align: center centers all the text inside */
+/* width: 100% lets it shrink on small screens */
+/* max-width: 480px stops it from getting too wide on large screens */
+/* box-shadow adds a soft shadow underneath to make it feel lifted */
+
+h1 {
+  color: #e94560;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+/* Colors the heading a bright red/pink */
+/* font-size: 2rem makes it twice the default text size */
+/* margin-bottom pushes content below it down by 12px */
+
+p {
+  color: #a8b2d8;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+/* Colors all paragraphs a soft light blue-grey */
+/* margin-bottom adds space below each paragraph */
+
+input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  background-color: #0f3460;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+/* width: 100% makes the input stretch the full width of the container */
+/* padding adds space inside the input so text isn't cramped */
+/* border gives it a subtle dark blue border */
+/* border-radius rounds the corners */
+/* background-color and color make it dark with white text */
+/* font-family applies Poppins here too - inputs don't inherit fonts automatically */
+
+input:focus {
+  outline: none;
+  border-color: #e94560;
+}
+/* :focus styles the input when the user clicks on it */
+/* outline: none removes the default ugly browser focus ring */
+/* border-color changes the border to pink when active */
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+/* width: 100% stretches the button to full width */
+/* background-color makes it our signature pink/red */
+/* border: none removes the default button border */
+/* cursor: pointer changes the mouse to a hand when hovering */
+/* font-weight: 600 makes the button text semi-bold */
+
+button:hover {
+  background-color: #c73652;
+}
+/* :hover styles the button when the mouse moves over it */
+/* Slightly darker pink gives a satisfying click feel */
+
+#message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-height: 28px;
+}
+/* Styles the feedback message ("too high", "too low", etc.) */
+/* min-height: 28px stops the layout from jumping when the message appears */
+
+#attempts {
+  font-size: 0.9rem;
+  color: #6b7a99;
+}
+/* Styles the attempt counter in a smaller, dimmer text */
